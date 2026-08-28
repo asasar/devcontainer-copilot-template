@@ -1,0 +1,839 @@
+{
+  "version": 1,
+  "skills": {
+    "agentic-workflows": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": ".github/skills/agentic-workflows/SKILL.md",
+      "computedHash": "f7eb550de7891da7dfd5fc0a6ab92967a382097fdb33360a74a3996f07a2e85b"
+    },
+    "airunway-aks-setup": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/airunway-aks-setup/SKILL.md",
+      "computedHash": "b4ae380f8815f23b3109093efcd9544579a9564e21aabef19bc5191568101f32"
+    },
+    "analyzing-dotnet-performance": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-diag/skills/analyzing-dotnet-performance/SKILL.md",
+      "computedHash": "455c653913449f6fc71807fd9824dbb610d4f2e716ec0b0e4ae5c5c442ddb09b"
+    },
+    "android-tombstone-symbolication": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-diag/skills/android-tombstone-symbolication/SKILL.md",
+      "computedHash": "c7be23945088310c5b52e6af4f6d0bf87856de33d235989f73c119fcc5988927"
+    },
+    "appinsights-instrumentation": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/appinsights-instrumentation/SKILL.md",
+      "computedHash": "4dc3e1ab77e28f8606393d6cca111214ce75053ce539476efe90fae35fb01b36"
+    },
+    "apple-crash-symbolication": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-diag/skills/apple-crash-symbolication/SKILL.md",
+      "computedHash": "7902b09d2c5e0855758af13850ce1686ce58ae896ea2d6032abbd699c838b275"
+    },
+    "aspire": {
+      "source": "microsoft/aspire-skills",
+      "sourceType": "github",
+      "skillPath": "skills/aspire/SKILL.md",
+      "computedHash": "a9bc9478562ae4c2c72cdaa45986cfd521ae32ecae049c7d5944e8b91425126a"
+    },
+    "aspire-deployment": {
+      "source": "microsoft/aspire-skills",
+      "sourceType": "github",
+      "skillPath": "skills/aspire-deployment/SKILL.md",
+      "computedHash": "e92cc2f0a4e186c6e8e4a04c1159eb5756dc325bf0fcd7ab3f5d55d65676c9cb"
+    },
+    "aspire-init": {
+      "source": "microsoft/aspire-skills",
+      "sourceType": "github",
+      "skillPath": "skills/aspire-init/SKILL.md",
+      "computedHash": "17582d2beb564a7f32e04116fcedec489fe6b585703c3873866ae94d404d8bcf"
+    },
+    "aspire-monitoring": {
+      "source": "microsoft/aspire-skills",
+      "sourceType": "github",
+      "skillPath": "skills/aspire-monitoring/SKILL.md",
+      "computedHash": "b8ad035d035dfdeb261c200d90a761494976f981f23f14d78a9e59a29de4060b"
+    },
+    "aspire-orchestration": {
+      "source": "microsoft/aspire-skills",
+      "sourceType": "github",
+      "skillPath": "skills/aspire-orchestration/SKILL.md",
+      "computedHash": "d4309cfe4b5a58169a935e6433a595778a04cd77e1a0c11dbaeda875c0305be4"
+    },
+    "aspireify": {
+      "source": "microsoft/aspire-skills",
+      "sourceType": "github",
+      "skillPath": "skills/aspireify/SKILL.md",
+      "computedHash": "a1e19912ebc55627f8b0a8551d0885257925505a1693326b829c1a081f855ef3"
+    },
+    "assertion-quality": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/assertion-quality/SKILL.md",
+      "computedHash": "70a3dd4820557cc2f63c00f93b995b44adb9924de50c74b7927b51875c84d606"
+    },
+    "author-component": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-blazor/skills/author-component/SKILL.md",
+      "computedHash": "ca586b712c7b1559a0b15982eae855bca6cdf261f2f357357b1f5c61512fbcd0"
+    },
+    "authoring-github-workflows": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/authoring-github-workflows/SKILL.md",
+      "computedHash": "8a1ab212d59191e828ad00d02060c93cb642ff35dcb1761212a7cd2dcef212cb"
+    },
+    "azure-ai": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-ai/SKILL.md",
+      "computedHash": "00533909740269b80dfaa1edd24b0ce86f2fc452e977c811647839353c793025"
+    },
+    "azure-aigateway": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-aigateway/SKILL.md",
+      "computedHash": "d8073cb540d8799c446148a2605965d9cd0ff2205c0fe8911c4350df499c46d5"
+    },
+    "azure-app-onboard": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-app-onboard/SKILL.md",
+      "computedHash": "b27964c51d140548f0ea44f525a29620d23e6cf3d32940763f445f93467287f0"
+    },
+    "azure-app-onboard-prereq": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-app-onboard-prereq/SKILL.md",
+      "computedHash": "8d97e9a72e5bb4ee22574c62c2c94ad1f2c58b2e780c6ee3d49af51b8afd1e91"
+    },
+    "azure-cloud-migrate": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-cloud-migrate/SKILL.md",
+      "computedHash": "9335f809ddf550d45f116f8fa1e3ec6bc114c5d6ad8eaf7f519a90846b41e419"
+    },
+    "azure-compliance": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-compliance/SKILL.md",
+      "computedHash": "32164055b7a363d813120df546b08c95c91128880a8a336a2e8b9b754c00065c"
+    },
+    "azure-compute": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-compute/SKILL.md",
+      "computedHash": "6c87d6a2e509c45cc761c84df8d0c302015470d1f061f5eaa8109408b0bf5480"
+    },
+    "azure-cost": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-cost/SKILL.md",
+      "computedHash": "1288232f3fb8ed8d591b3ab8960543594b57524d13fb0124515ae4e8c4e390ce"
+    },
+    "azure-deploy": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-deploy/SKILL.md",
+      "computedHash": "b7de6dbbd1e95ceeca96f4937a3cae446d1a5f39dbb06ee5e0def30eb8bea15f"
+    },
+    "azure-diagnostics": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-diagnostics/SKILL.md",
+      "computedHash": "3311cd59d68193523c96eadd29c4339e41d939b6180997d980f35589c5afef05"
+    },
+    "azure-enterprise-infra-planner": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-enterprise-infra-planner/SKILL.md",
+      "computedHash": "d47b175ae17d2cfa7bfab34acf5631026a59fb0b3fabcbdd80ee9e1bc49ec9c0"
+    },
+    "azure-kubernetes": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-kubernetes/SKILL.md",
+      "computedHash": "390f198d1c2033953729996bd3fa70dc3d9cef9775207dae150d8bc93182f07c"
+    },
+    "azure-kusto": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-kusto/SKILL.md",
+      "computedHash": "53695912e6df56817f5c9863ed9e288b5f2e59ff9cc4d576ece7eaf5ee824e18"
+    },
+    "azure-kusto-graph": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": ".github/plugins/azure-kusto-graph-skills/skills/azure-kusto-graph/SKILL.md",
+      "computedHash": "b2aadd950029734b49ed5ab9ca60f5a0853d21c49b689f40afe4d293fc59b27c"
+    },
+    "azure-kusto-irql": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": ".github/plugins/azure-kusto-graph-skills/skills/azure-kusto-irql/SKILL.md",
+      "computedHash": "ee160f52b8173035745b1e92abede243a733de2763ee14eea9e4377bc51c6ae2"
+    },
+    "azure-kusto-irql-graph": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": ".github/plugins/azure-kusto-graph-skills/skills/azure-kusto-irql-graph/SKILL.md",
+      "computedHash": "1b3781c1ccc5255b73397990c546e48774c93193eaf060339d68de9a5afbfb0c"
+    },
+    "azure-messaging": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-messaging/SKILL.md",
+      "computedHash": "a20a13d893dd74ee286ded71972c25057a514cc12c02f87ddf7cbc599cb4f43a"
+    },
+    "azure-prepare": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-prepare/SKILL.md",
+      "computedHash": "69b152f4024da33f620ce3b964085aaac95fcd09523f29bfebc844279b0f8b16"
+    },
+    "azure-quotas": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-quotas/SKILL.md",
+      "computedHash": "b650926f5c8253960bfaf343ec581ba877919d1d24a68cedc53f788e6de82914"
+    },
+    "azure-reliability": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-reliability/SKILL.md",
+      "computedHash": "1730a0307a3a18d166cde0cf8ebb65e313c24eef86a8d74c7a72e6d172881329"
+    },
+    "azure-resource-lookup": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-resource-lookup/SKILL.md",
+      "computedHash": "3a5fbee5eb1b888b8044e9618cdcdf6b2e4d4727be400d4bd3718379272d4885"
+    },
+    "azure-resource-visualizer": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-resource-visualizer/SKILL.md",
+      "computedHash": "d96aa219d8c74e26d5a18f2419b8f362c348f60b0bc79d7c8e11c4010293083e"
+    },
+    "azure-storage": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-storage/SKILL.md",
+      "computedHash": "f6439393f103bedc8de84abbb73438347b9579df9816a1eb08df3f3a8ffac152"
+    },
+    "azure-upgrade": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-upgrade/SKILL.md",
+      "computedHash": "1f8fbc961261d2bf065e23ad761cf3a313c808e84655015c6838c23bea224d55"
+    },
+    "azure-validate": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/azure-validate/SKILL.md",
+      "computedHash": "c8b47ccbea6cd7de35e966f6f557799d0c68489b57bd0fe35ac17c0cb5da0097"
+    },
+    "binlog-failure-analysis": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/binlog-failure-analysis/SKILL.md",
+      "computedHash": "f5cfa834b002082f4a24de4c4b2b0fcb8b313d3dd21f1b7002d12035d41d9fe4"
+    },
+    "binlog-generation": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/binlog-generation/SKILL.md",
+      "computedHash": "379f8e189c33cc90dbdde71bf0e5abf900a177aafed7fb76f969b0a30d8cf502"
+    },
+    "build-parallelism": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/build-parallelism/SKILL.md",
+      "computedHash": "f22f5073e11fd4467336840d068dfb36a3dd1992ac15667936776bce54861790"
+    },
+    "build-perf-baseline": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/build-perf-baseline/SKILL.md",
+      "computedHash": "2d500eac129c591587e1969454c386bb62156c038c092624001ba9467e7bc2e7"
+    },
+    "build-perf-diagnostics": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/build-perf-diagnostics/SKILL.md",
+      "computedHash": "e9595c6438e596e75b25775a935c23744aba7ad80a973658ca84709881b8fa8f"
+    },
+    "check-bin-obj-clash": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/check-bin-obj-clash/SKILL.md",
+      "computedHash": "225f62de8715ced138fbe0b34630ef0f3ba9b4ec83e5ac719a57e98efa5c95a4"
+    },
+    "clr-activation-debugging": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-diag/skills/clr-activation-debugging/SKILL.md",
+      "computedHash": "e3ce61642beed96f44b7babaed8662586bec95f70847ea0202c1c01160473e56"
+    },
+    "code-testing-agent": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/code-testing-agent/SKILL.md",
+      "computedHash": "b3d994fcd30adf812fb045cb94596134c9ab23e0321077b4108b0aa5ba524133"
+    },
+    "code-testing-extensions": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/code-testing-extensions/SKILL.md",
+      "computedHash": "b8e0fe17808dcc7f37021810ac27a49edf7d5d0d39c758689ec9af98cdc082ab"
+    },
+    "collect-user-input": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-blazor/skills/collect-user-input/SKILL.md",
+      "computedHash": "6161812c5425459dd9d079241bcdab965e1534967ec07050d47d5d906bf4686e"
+    },
+    "configure-auth": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-blazor/skills/configure-auth/SKILL.md",
+      "computedHash": "38f356700f0ffc5d886469073f332f575e419ec9726439e5ecd839e15871efa5"
+    },
+    "configuring-opentelemetry-dotnet": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-aspnetcore/skills/configuring-opentelemetry-dotnet/SKILL.md",
+      "computedHash": "736b7476710267bd46154714f38e16f5bac5498ce6a9aa980eb1d0a214960890"
+    },
+    "convert-blazor-server-to-webapp": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-aspnetcore/skills/convert-blazor-server-to-webapp/SKILL.md",
+      "computedHash": "79003091f1aea5ee2527d367cb5e0d7bd0fa4bf4fd2992be261050e7667ab8f2"
+    },
+    "convert-to-cpm": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-nuget/skills/convert-to-cpm/SKILL.md",
+      "computedHash": "38e94d855e8c351464f1110c4cf6a4ae7faf6d5f82834901a9307eb1525aad21"
+    },
+    "coordinate-components": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-blazor/skills/coordinate-components/SKILL.md",
+      "computedHash": "d56d9ae5a959c9b2003b496892b103c7c38d240d59a035e8872dedf6286f7718"
+    },
+    "copy-to-output-directory": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/copy-to-output-directory/SKILL.md",
+      "computedHash": "8a2d2aa82feb75d6ddacf3d2ad1639f75d1a2586cc7ee2f6324e1c7208c66c97"
+    },
+    "coverage-analysis": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/coverage-analysis/SKILL.md",
+      "computedHash": "226c2749d9bb453ec44bcf7227bfb117546c44a8ce478d889b338c31952cb643"
+    },
+    "crap-score": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/crap-score/SKILL.md",
+      "computedHash": "838274d2ef6a37b22a99321143de4e27fe456acb0383e05c14e2b974de1924bc"
+    },
+    "create-blazor-project": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-blazor/skills/create-blazor-project/SKILL.md",
+      "computedHash": "e307489077e9982c4806f3de58f0ac823ec5013f139e076355d305c587f586b1"
+    },
+    "create-custom-agent": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/create-custom-agent/SKILL.md",
+      "computedHash": "319e3a22606d3b5c22e534e8052ed3d53554094ed9c2cb88ee0d1ff42c2f113c"
+    },
+    "create-datadriven-aspnetcore": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-data/skills/create-datadriven-aspnetcore/SKILL.md",
+      "computedHash": "f0361dc87f87fec319cc1c33d18896c6c5a98ea0bcc8c3ac055d6be2791dafb8"
+    },
+    "create-skill": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/create-skill/SKILL.md",
+      "computedHash": "40145e8018dabfbf8530caa5aeec0eb8ae1caed0a4c6d760c2f7d0d5ddf2c06e"
+    },
+    "create-skill-test": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/create-skill-test/SKILL.md",
+      "computedHash": "eda86c1f9306d3b3486c4f23a923625efe21428daef53eb3effba1b105195599"
+    },
+    "csharp-scripts": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-advanced/skills/csharp-scripts/SKILL.md",
+      "computedHash": "66fc0c59515a4f8ad15546477b39ce1f3817be4ef31533404370dcb0ab77da86"
+    },
+    "detect-static-dependencies": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/detect-static-dependencies/SKILL.md",
+      "computedHash": "39095c2cf59bfbf9166099c183bd54275064da38d9f9e31afbe224303c1c762e"
+    },
+    "directory-build-organization": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/directory-build-organization/SKILL.md",
+      "computedHash": "c06f8dcbfbe4b3c9888cc62ed6ff16c06ba605b1a87839519ebe54e3a3e9613a"
+    },
+    "dotnet-aot-compat": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-upgrade/skills/dotnet-aot-compat/SKILL.md",
+      "computedHash": "71e462a0382d3d07a858d466e8465a2faa62dc2bf7526e7b9928db13b9961602"
+    },
+    "dotnet-maui-doctor": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-maui/skills/dotnet-maui-doctor/SKILL.md",
+      "computedHash": "58c051d67ae9a31fc2c8c2c09fc610a1cfdb9c35f36572837c4febc75fe8bb8d"
+    },
+    "dotnet-pinvoke": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-advanced/skills/dotnet-pinvoke/SKILL.md",
+      "computedHash": "1a1b4ac063392df8e140363237e210ba4f7395561a181669df40a681571b0ffe"
+    },
+    "dotnet-trace-collect": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-diag/skills/dotnet-trace-collect/SKILL.md",
+      "computedHash": "0f85e5292974bb2892327da90327b3f20d8341bf82fc6f55b4c4020e41cd6c5c"
+    },
+    "dotnet-webapi": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-aspnetcore/skills/dotnet-webapi/SKILL.md",
+      "computedHash": "9f9ca386ddefb34ebeaf269c6a7dac0bd0a8e9ea901ad5c489cd4d5e7c61fb22"
+    },
+    "dump-collect": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-diag/skills/dump-collect/SKILL.md",
+      "computedHash": "8ebf8877ca6f36f6580109334b2c9f166be5b12db95fdf367c551986156f87c7"
+    },
+    "entra-agent-id": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/entra-agent-id/SKILL.md",
+      "computedHash": "7c107053549ee74724ff299ccf9ce0efffeb156866e792533228dc7b03c77097"
+    },
+    "entra-app-registration": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/entra-app-registration/SKILL.md",
+      "computedHash": "f78cb4466fa387b9f13c63a3e0ed8eb11fe7bb62740663d8bd21cd0f09927bee"
+    },
+    "eval-performance": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/eval-performance/SKILL.md",
+      "computedHash": "2184faca3519e475d61e5d913fb9d6089c619fad5dbb88c9347562d3b93f2104"
+    },
+    "extension-points": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/extension-points/SKILL.md",
+      "computedHash": "96356c4d6d44a1d7faedb5e1de765f3b508f305283b60fef5ae5a314182a073a"
+    },
+    "fetch-and-send-data": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-blazor/skills/fetch-and-send-data/SKILL.md",
+      "computedHash": "026c233ed047a40bf47fc424f9cb89bf482250b83ea9c8e1ffe796e11387a84b"
+    },
+    "filter-syntax": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/filter-syntax/SKILL.md",
+      "computedHash": "ecccc9830ed70ae0c107c3c1605544012701864a12798249e0a0219ff94fb513"
+    },
+    "find-untested-sources": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/find-untested-sources/SKILL.md",
+      "computedHash": "d15487384b3c6e5072bdbc8ac420cdcc2a7e14499a8d816ebae9018e7245e572"
+    },
+    "generate-testability-wrappers": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/generate-testability-wrappers/SKILL.md",
+      "computedHash": "10a88db869e8bbc8e32f40e8b77d65f59aa0420bf6480ba70239069f12051dc2"
+    },
+    "grade-tests": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/grade-tests/SKILL.md",
+      "computedHash": "83d801a8fa995030ed2eef89594c864b8fa5f976c179eea463a7c30806f542eb"
+    },
+    "improve-skill-quality": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/improve-skill-quality/SKILL.md",
+      "computedHash": "ab3d41bc8f52b661048dee33614760d990988d142f45490b670d603c9ddbe8b9"
+    },
+    "including-generated-files": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/including-generated-files/SKILL.md",
+      "computedHash": "01abc9025e16d2f7034eea800f8324f01a2978012d94917a6675983ccef51706"
+    },
+    "incremental-build": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/incremental-build/SKILL.md",
+      "computedHash": "67efdf4479f0fd98b71ed25fbfcc1c82ff0ada45b22ab6c6de178016ace68442"
+    },
+    "item-management": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/item-management/SKILL.md",
+      "computedHash": "980140398decd7986f95de796cf2e85e0b4be281f8fd7f964f88b96acabd4c73"
+    },
+    "maui-app-lifecycle": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-maui/skills/maui-app-lifecycle/SKILL.md",
+      "computedHash": "1c0ac15003d80e1a2de8b11ca93ccb4eda511dc9dc1d1313a03ed9eb7a05c865"
+    },
+    "maui-collectionview": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-maui/skills/maui-collectionview/SKILL.md",
+      "computedHash": "46ade85ecae104dcb9395ed2c8bd43a9db10c0959aa323055663f9194fded81b"
+    },
+    "maui-data-binding": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-maui/skills/maui-data-binding/SKILL.md",
+      "computedHash": "a852745c93d83ae3e11604e9bb1ee13ae0c0206ab45be4c92a6fe602639dc9c7"
+    },
+    "maui-dependency-injection": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-maui/skills/maui-dependency-injection/SKILL.md",
+      "computedHash": "2ce8daba43b4f7da58341d8f24048f12517ebbb7bdae71ce9831b75b98f1cf8d"
+    },
+    "maui-safe-area": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-maui/skills/maui-safe-area/SKILL.md",
+      "computedHash": "1895016131b1caeaedc05db2b919b08e3cc45bda2a6779d5df446ab3ad27726b"
+    },
+    "maui-shell-navigation": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-maui/skills/maui-shell-navigation/SKILL.md",
+      "computedHash": "632d90c74a1e22fb6eeec4842e309cc9ad2a87d383dbf4f294d1c3aa12ce8423"
+    },
+    "maui-theming": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-maui/skills/maui-theming/SKILL.md",
+      "computedHash": "2af7e6648249556626d620be7d8f96a1be676f2c4f4e0b8a3ab881bfa4d782e0"
+    },
+    "microbenchmarking": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-diag/skills/microbenchmarking/SKILL.md",
+      "computedHash": "65ffc10345922263e0331e45018720d10ad51e0fd08f47674fc808ce1685ecd0"
+    },
+    "microsoft-foundry": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/microsoft-foundry/SKILL.md",
+      "computedHash": "62f307473d657d82ce05d2dddc68058c09612bf263137d496a3e7ff3e18b1152"
+    },
+    "migrate-dotnet10-to-dotnet11": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-upgrade/skills/migrate-dotnet10-to-dotnet11/SKILL.md",
+      "computedHash": "3fa7c85616bd3d58eb2dae5c8b6afaf61c50d14e2671a16473b731be24df9c86"
+    },
+    "migrate-dotnet8-to-dotnet9": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-upgrade/skills/migrate-dotnet8-to-dotnet9/SKILL.md",
+      "computedHash": "37628ac363d274539adb8ed7318c796cd9bcab9ead9a6b74776c5aa0b907215e"
+    },
+    "migrate-dotnet9-to-dotnet10": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-upgrade/skills/migrate-dotnet9-to-dotnet10/SKILL.md",
+      "computedHash": "74bfbd47dbc5a89dc2bc9c86c04429bd687e401fde96a00691e5765f998fcacc"
+    },
+    "migrate-mstest-v1v2-to-v3": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test-migration/skills/migrate-mstest-v1v2-to-v3/SKILL.md",
+      "computedHash": "af82940994b0c55b803d90e37a921d57a35bca355df31c26ba34b0a1450d8e63"
+    },
+    "migrate-mstest-v3-to-v4": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test-migration/skills/migrate-mstest-v3-to-v4/SKILL.md",
+      "computedHash": "2d3266b83e3a4194698044b1d358ac0b4843d1bfa476d9784d45454932b4e12a"
+    },
+    "migrate-nullable-references": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-upgrade/skills/migrate-nullable-references/SKILL.md",
+      "computedHash": "dd10c50d8e8ae7928e7fcc5b6e25920e6953d6f065001ee8c0ca3b1119dd1735"
+    },
+    "migrate-static-to-wrapper": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/migrate-static-to-wrapper/SKILL.md",
+      "computedHash": "2d0616e245ed2238b4f0b1e960586e8b48acb868ea13c23af192b2fd32790fc8"
+    },
+    "migrate-vstest-to-mtp": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test-migration/skills/migrate-vstest-to-mtp/SKILL.md",
+      "computedHash": "1f897babef9a8584f6cca862b044444db859005a3117632538f4b16f83f3ee99"
+    },
+    "migrate-xunit-to-mstest": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test-migration/skills/migrate-xunit-to-mstest/SKILL.md",
+      "computedHash": "6fba4a6070e0ae735b0a50bef41b917105ea722d311245cbb49851697c6d7af6"
+    },
+    "migrate-xunit-to-xunit-v3": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test-migration/skills/migrate-xunit-to-xunit-v3/SKILL.md",
+      "computedHash": "3e5ced18eb8a27e53aa842c3d968f0181288a025c94ce1be8b9867b911380d2f"
+    },
+    "minimal-api-file-upload": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-aspnetcore/skills/minimal-api-file-upload/SKILL.md",
+      "computedHash": "6337dc97546815a5f19a73fcf80b0a20164e961768540a12403664b8e1625849"
+    },
+    "msbuild-antipatterns": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/msbuild-antipatterns/SKILL.md",
+      "computedHash": "5b7d4fb842b91370877740700d0a020d8e053a96c78a9078714b165bac5d2b20"
+    },
+    "msbuild-modernization": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/msbuild-modernization/SKILL.md",
+      "computedHash": "615f449d9838bf0a1a3cbdd9d6a7447d52ae22de8d03d73445e7da8444ff0df0"
+    },
+    "msbuild-server": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/msbuild-server/SKILL.md",
+      "computedHash": "2595ce0f0a35769d0266c77690ee3e85b1c9c7158c001032c3d66bbac1c63d51"
+    },
+    "mtp-hot-reload": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/mtp-hot-reload/SKILL.md",
+      "computedHash": "9a2a600f752590b76c8b3d5e2a7131b4dbd914a0e37da5f7d5f74ffc28ae1dee"
+    },
+    "nuget-trusted-publishing": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-advanced/skills/nuget-trusted-publishing/SKILL.md",
+      "computedHash": "cfe94d9ea3cc0cc2107eff8114dcf945778a0b24b4cc5205d365e3b8efa059cf"
+    },
+    "optimizing-ef-core-queries": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-data/skills/optimizing-ef-core-queries/SKILL.md",
+      "computedHash": "98eb6bb1ab357806cf068908b5b00c3992b898b9428b587a7f357adb3387c8aa"
+    },
+    "plan-ui-change": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-blazor/skills/plan-ui-change/SKILL.md",
+      "computedHash": "028b3684f6423c2bede4a3eae0fec4bacb6d5e5d6510339378912608218e1a33"
+    },
+    "platform-detection": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/platform-detection/SKILL.md",
+      "computedHash": "f267fd57bb8c2a2e5f7480d07efbe34af884c930842245a158e5d5f945783adf"
+    },
+    "property-patterns": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/property-patterns/SKILL.md",
+      "computedHash": "2a14484c9fee40c1a77b53d7a5b3c98f3d5733874be31946b0d598d9c47ba1e2"
+    },
+    "python-appservice-deploy": {
+      "source": "microsoft/azure-skills",
+      "sourceType": "github",
+      "skillPath": "skills/python-appservice-deploy/SKILL.md",
+      "computedHash": "6ae95192f2670f8d5385f7f1440816debba0382f46b410cfb4f8935a02a5c3d7"
+    },
+    "resolve-project-references": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/resolve-project-references/SKILL.md",
+      "computedHash": "661a031c3d03b8837923b2302329a10de675ca4193ab04bad2a2ad1ea81384b4"
+    },
+    "run-tests": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/run-tests/SKILL.md",
+      "computedHash": "f01aee5b8850c6446c6515ef740109bb6854f388db3ccac03aadb382b40b05c0"
+    },
+    "scaffold-dotnet-test-project": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/scaffold-dotnet-test-project/SKILL.md",
+      "computedHash": "dc9f2af1cf1278559dd23e499c462fd6a86e2c47f8f31dc0725f0f8e4cb1d6e0"
+    },
+    "setup-local-sdk": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet/skills/setup-local-sdk/SKILL.md",
+      "computedHash": "6daa07948c62574cdf9327a5223a751ba0be173e0b3d63f3214fd0caea8aa34c"
+    },
+    "support-prerendering": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-blazor/skills/support-prerendering/SKILL.md",
+      "computedHash": "f73f97f286668f24622a992667cdfaf489c042ceed43f21d109fc777a85804fe"
+    },
+    "system-text-json-net11": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet11/skills/system-text-json-net11/SKILL.md",
+      "computedHash": "c749224be1d698e62c1ae41478548747d3a9f8f78c6742adc224dee215868e14"
+    },
+    "target-authoring": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-msbuild/skills/target-authoring/SKILL.md",
+      "computedHash": "5832aeee37f96286fff1fba6296369b3fac3dc09964a2f80a905bb0ad901e844"
+    },
+    "technology-selection": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-ai/skills/technology-selection/SKILL.md",
+      "computedHash": "ed8c12558a65fe550d980a66116548776b2811eb971cd372bd23aed5f0e191e2"
+    },
+    "template-authoring": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-template-engine/skills/template-authoring/SKILL.md",
+      "computedHash": "3f9223fe0eee8c70f296be843e00de1c39bbf1d58ea2f5be1cbbede8bf41455e"
+    },
+    "template-comparison": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-template-engine/skills/template-comparison/SKILL.md",
+      "computedHash": "b318d2ee70147a7ede291b9c293dcef8213ace2bdff37c039b9d3fe3eef5e607"
+    },
+    "template-discovery": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-template-engine/skills/template-discovery/SKILL.md",
+      "computedHash": "aabf01913a373a707122fb933fd9fde51abf663db0e4fa0fc6a0c13c2cb3bf7f"
+    },
+    "template-instantiation": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-template-engine/skills/template-instantiation/SKILL.md",
+      "computedHash": "9b9d8b9669f4082b22ef6a6c4dc76e8f0a05976ff486242757408134260a292f"
+    },
+    "template-smart-defaults": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-template-engine/skills/template-smart-defaults/SKILL.md",
+      "computedHash": "9ea9927972e35c9a720a467c778457b2731241b66d6b962e8a0d58f87afc7d22"
+    },
+    "template-validation": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-template-engine/skills/template-validation/SKILL.md",
+      "computedHash": "508bcea0864525bd79ba4559e526e1eaa7fd0652885d46f8d128293c0b814984"
+    },
+    "test-analysis-extensions": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/test-analysis-extensions/SKILL.md",
+      "computedHash": "d2b87e9658f2c3219ae234f257e2f98b6ee51cdb214c1f6babc4091790204c14"
+    },
+    "test-anti-patterns": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/test-anti-patterns/SKILL.md",
+      "computedHash": "65f65a4b4d534262038e7cba5402df83440265b4e41c674a265ff7deb40ac78e"
+    },
+    "test-gap-analysis": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/test-gap-analysis/SKILL.md",
+      "computedHash": "b83a3ced714d20cc1bcd62228867523405b7c97b3510cc897548fc66f4f163d4"
+    },
+    "test-smell-detection": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/test-smell-detection/SKILL.md",
+      "computedHash": "5ea08983336f751fe76b20dc7745f29719e94fe45207e8592a5aed6a48a07991"
+    },
+    "test-tagging": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/test-tagging/SKILL.md",
+      "computedHash": "ac78f90c4fbd0efc828e381a4b2c58cd2c304eaaba1bfdac0396b12ed7b841cd"
+    },
+    "testability-obstacle": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/testability-obstacle/SKILL.md",
+      "computedHash": "b1146fb55045faacffbb34e063e72ed7e7bcb8b11b900a396f95c0699c7c66ee"
+    },
+    "thread-abort-migration": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-upgrade/skills/thread-abort-migration/SKILL.md",
+      "computedHash": "e7a95dddebf28dc7aaf70acc41e94332739c4da296147cae6cae633e0ba21069"
+    },
+    "use-js-interop": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-blazor/skills/use-js-interop/SKILL.md",
+      "computedHash": "f9722ef75b3166fb9248d69d62886613b5d7bdbf07fd6141c7d9f116f6dea37a"
+    },
+    "vectorization": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-advanced/skills/vectorization/SKILL.md",
+      "computedHash": "b7613ee8af8f529d762a2a167c30094b2db9079f967af9023064de18e885d078"
+    },
+    "writing-mstest-tests": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/writing-mstest-tests/SKILL.md",
+      "computedHash": "893963b186861840343377fc92b4088600281368ea77e0fc12dea418176020d2"
+    }
+  }
+}
