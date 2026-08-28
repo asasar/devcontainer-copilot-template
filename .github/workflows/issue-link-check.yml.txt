@@ -1,0 +1,68 @@
+name: Issue & Project link check
+
+# Mechanical gate (CI side): every PR into main must reference an existing
+# GitHub issue (e.g. "Closes #12", "Refs #12"), and that issue must be an
+# item in the "World Capitals Map" Project (#5). This is the CI counterpart
+# to the local commit-msg hook (scripts/git-hooks/commit-msg) — see
+# .github/copilot-instructions.md "Task tracking" for the full rule.
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: read
+  issues: read
+
+jobs:
+  check-issue-link:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract linked issue number
+        id: extract
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          TEXT="$PR_TITLE
+          $PR_BODY"
+          ISSUE_NUM=$(echo "$TEXT" | grep -oiE '(closes|fixes|refs?|resolves)[[:space:]]*#[0-9]+' | grep -oE '[0-9]+' | head -1 || true)
+          if [ -z "$ISSUE_NUM" ]; then
+            ISSUE_NUM=$(echo "$TEXT" | grep -oE '#[0-9]+' | grep -oE '[0-9]+' | head -1 || true)
+          fi
+          if [ -z "$ISSUE_NUM" ]; then
+            echo "::error::PR title/body does not reference any GitHub issue (e.g. 'Closes #12'). Every task must have a tracked issue before merging. See .github/copilot-instructions.md."
+            exit 1
+          fi
+          echo "issue_num=$ISSUE_NUM" >> "$GITHUB_OUTPUT"
+
+      - name: Verify issue exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue view "${{ steps.extract.outputs.issue_num }}" \
+            --repo "${{ github.repository }}" \
+            --json number,title,state >/dev/null
+
+      - name: Verify issue is tracked in the Project
+        env:
+          GH_TOKEN: ${{ secrets.PROJECT_GH_TOKEN }}
+          ISSUE_NUM: ${{ steps.extract.outputs.issue_num }}
+        run: |
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::warning::PROJECT_GH_TOKEN secret not configured (needs 'project' scope) — skipping Project membership check. Configure this secret to fully enforce the gate."
+            exit 0
+          fi
+          gh project item-list 5 --owner asasar --format json > /tmp/project-items.json
+          FOUND=$(python3 scripts/ci/check-issue-in-project.py /tmp/project-items.json "$ISSUE_NUM")
+          if [ "$FOUND" != "yes" ]; then
+            ISSUE_URL="https://github.com/${{ github.repository }}/issues/${ISSUE_NUM}"
+            echo "::error::Issue #${ISSUE_NUM} is not an item in the 'World Capitals Map' Project (#5). Run: gh project item-add 5 --owner asasar --url $ISSUE_URL"
+            exit 1
+          fi
+          echo "Issue #${ISSUE_NUM} confirmed in Project #5."
