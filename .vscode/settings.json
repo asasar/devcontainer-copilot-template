@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/__pycache__": true,
+        ".devcontainer": false,
+        ".azdo": false,
+        "github": false,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/.venv": false,
+        "**/.vscode": false
+    }
+}

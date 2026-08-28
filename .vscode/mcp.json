@@ -1,0 +1,104 @@
+{
+    "servers": {
+        "github-remote-cmp": {
+            "type": "http",
+            "url": "https://api.githubcopilot.com/mcp/",
+            "headers": {
+                "Authorization": "Bearer ${input:github_mcp_pat}"
+            }
+        },
+        "github": {
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "-e",
+                "GITHUB_PERSONAL_ACCESS_TOKEN",
+                "ghcr.io/github/github-mcp-server"
+            ],
+            "env": {
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_mcp_pat}"
+            }
+        },
+        "ado-remote-mcp": {
+            "url": "https://mcp.dev.azure.com/{ado_remote_organization}",
+            "type": "http"
+        },
+        "ado-local-mcp": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@azure-devops/mcp",
+                "${input:ado_remote_organization}"
+            ]
+        },
+        "context7": {
+            "type": "http",
+            "url": "https://mcp.context7.com/mcp",
+            "headers": {
+                "Authorization": "Bearer ${input:context7_api_key}"
+            }
+        },
+        "terraform": {
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "hashicorp/terraform-mcp-server"
+            ]
+        },
+        "azure": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@azure/mcp@latest",
+                "server",
+                "start"
+            ]
+        },
+        "docker-mcp": {
+            "type": "stdio",
+            "command": "docker",
+            "args": [
+                "mcp",
+                "gateway",
+                "run",
+                "--profile",
+                "default"
+            ]
+        },
+        "filesystem": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "${workspaceFolder}"
+            ]
+        }
+    },
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "github_mcp_pat",
+            "description": "GitHub Personal Access Token",
+            "password": true
+        },
+        {
+            "type": "promptString",
+            "id": "ado_remote_organization",
+            "description": "Azure DevOps organization name  (e.g. 'contoso')",
+            "password": false
+        },
+        {
+            "type": "promptString",
+            "id": "context7_api_key",
+            "description": "Context7 API Key",
+            "password": true
+        }
+    ]
+}
