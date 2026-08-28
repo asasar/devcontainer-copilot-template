@@ -54,8 +54,6 @@ if ! command -v tfenv >/dev/null 2>&1; then
     chmod +x /etc/profile.d/tfenv.sh
 fi
 
-pip install python-dotenv
-
 sudo apt-get autoremove -y &&
     sudo apt-get clean -y &&
     sudo rm -rf /var/lib/apt/lists/* &&

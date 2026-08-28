@@ -1,7 +1,8 @@
 {
     "name": "Dev",
     "build": {
-        "dockerfile": "Dockerfile.local"
+        "dockerfile": "Dockerfile.local",
+        "context": "."
     },
     "runArgs": [
         // Access docker from host machine inside the container
