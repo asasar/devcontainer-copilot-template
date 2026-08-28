@@ -27,8 +27,7 @@ if [ -d "$GIT_ROOT/.git" ]; then
 fi
 echo
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "  RESOURCES"
+echo "  Welcome to the development container!"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "  Host:     ${TOTAL_RAM_GB}GB RAM, ${TOTAL_CORES} cores"
-echo
-echo "  Allocated:"
+
+pip install python-dotenv
