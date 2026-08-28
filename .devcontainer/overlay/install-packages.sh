@@ -53,7 +53,7 @@ if ! command -v tfenv >/dev/null 2>&1; then
     printf '%s\n' 'export PATH="/usr/local/share/tfenv/bin:$PATH"' >> /etc/bash.bashrc
     chmod +x /etc/profile.d/tfenv.sh
 fi
-
+curl -sSL https://aspire.dev/install.sh | bash
 sudo apt-get autoremove -y &&
     sudo apt-get clean -y &&
     sudo rm -rf /var/lib/apt/lists/* &&
