@@ -120,9 +120,10 @@ az login
 ```
 
 If you are in a remote environment or want a browserless approach:
+use the tenant ID with the `--tenant` option. For example, Lyon EN Lab allows az login with:
 
 ```bash
-az login --use-device-code
+ az login --use-device-code --tenant f43e2fea-8e52-469a-a796-56e4c4bcb1f5 --subscription 1c27f99e-15f0-4bc1-be5b-3f283dd51054
 ```
 
 ### Confirm the active account
@@ -175,9 +176,12 @@ azd auth login
 ```
 
 For remote or browserless environments:
+Use --tenant-id with the appropriate tenant GUID. For example:
+
+Go to https://aka.ms/devicelogin
 
 ```bash
-azd auth login --use-device-code
+azd auth login --use-device-code --tenant-id f43e2fea-8e52-469a-a796-56e4c4bcb1f5
 ```
 
 ### Verify login

@@ -21,17 +21,14 @@
                 "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_mcp_pat}"
             }
         },
-        "ado-remote-mcp": {
-            "url": "https://mcp.dev.azure.com/{ado_remote_organization}",
-            "type": "http"
-        },
         "ado-local-mcp": {
             "type": "stdio",
             "command": "npx",
             "args": [
                 "-y",
                 "@azure-devops/mcp",
-                "${input:ado_remote_organization}"
+                "${input:ado_remote_organization}",
+                "--authentication envvar"
             ]
         },
         "context7": {
